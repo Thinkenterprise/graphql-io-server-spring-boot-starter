@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thinkenterprise</groupId>
+	<artifactId>graphql-io-server-spring-boot-starter</artifactId>
+	<version>0.0.9</version>
+	<name>graphql-io-server-spring-boot-starter</name>
+	<description>graphql-io-server-spring-boot-starter</description>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.2.0.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <graphql-io-server-java.version>0.0.9</graphql-io-server-java.version>
+        <spring-boot.version>1.5.2.RELEASE</spring-boot.version>
+    </properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.thinkenterprise</groupId>
+			<artifactId>graphql-io-server-spring-boot-autoconfiguration</artifactId>
+            <version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.thinkenterprise</groupId>
+			<artifactId>graphql-io-server-java</artifactId>
+            <version>${graphql-io-server-java.version}</version>
+		</dependency>
+
+	</dependencies>
+
+ 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+ 				
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
