@@ -17,7 +17,7 @@ FIXME
 ## Maven 
 ```
 <dependency>
-	<groupId>com.thinkenterprise</groupId>
+	<groupId>com.graphqlio</groupId>
 	<artifactId>graphql-io-server-spring-boot-starter</artifactId>
 	<version>0.0.9</version>
 </dependency>
@@ -28,7 +28,7 @@ FIXME
 
 ```
 dependencies {
-  compile 'com.thinkenterprise:graphql-io-server-spring-boot-starter:0.0.9'
+  compile 'com.graphqlio:graphql-io-server-spring-boot-starter:0.0.9'
 }
 ```
 
